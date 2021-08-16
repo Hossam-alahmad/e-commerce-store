@@ -1,0 +1,21 @@
+.confirm-content{
+    .row{
+        .col-md-8{
+            padding-right:0;
+            .box{
+                padding:20px 10px;
+                @extend %background-Color-White;
+                @extend %box-shadow;
+                border-radius:5px;
+                margin-bottom:40px;
+                form{
+                    div{
+                        label{
+                            font-weight:700;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

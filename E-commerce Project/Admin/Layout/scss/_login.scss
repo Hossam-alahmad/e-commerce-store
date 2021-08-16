@@ -1,0 +1,62 @@
+//-------- login style -------
+body{
+    background-color:#f1f1f1;
+    .login-box{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 400px;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 3px 5px #ccc;
+        .header{
+            margin-bottom:50px;
+            color:#343a40;
+            text-align: center;
+        }
+        form{
+            div{
+                position: relative;
+                margin-bottom:30px;
+                input{
+                    &:focus{
+                        color: #495057;
+                        background-color: #fff;
+                        /* border-color: #ff6b79; */
+                        outline: 0;
+                        box-shadow: 0 0 0 1PX rgba(0,123,255,.25);
+                    }
+                }
+                .notification{
+                    margin-top: 10px;
+                    background-color: #ea3f3f;
+                    color: white;
+                    padding: 5px;
+                    border-radius: 5px;
+                    display:none;
+                }
+                .invalid{
+                    display:block;
+                }
+                .eye{
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    font-size: 17px;
+                    /* background-color: red; */
+                    padding: 10px;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    color:rgba(52,58,64,.5);
+                    &:hover{
+                        color:rgba(52,58,64,1);
+                    }
+                }
+            }
+            
+        }
+    }
+}

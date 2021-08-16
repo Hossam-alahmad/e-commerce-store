@@ -1,0 +1,23 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    background-color:#fff;
+}
+@import "_extend.scss";
+@import "_login.scss";
+@import "_index.scss";
+@import "_sidebar.scss";
+@import "_dashboard.scss";
+@import "_insert-product.scss";
+@import "_view-products.scss";
+@import "_view-p-cat.scss";
+@import "_edit-images.scss";
+@import "_notification.scss";
+@import "_admin-insert.scss";
+@import "_view-boxes.scss";
+@import "_admin-profile.scss";
+
+

@@ -1,0 +1,90 @@
+/* ----------- Sidebar Style -------------- */
+.sidebar-box{
+    padding:0;
+    .sidebar-menu{
+        position: relative;
+        @extend %background-Color-White;
+        border-radius: 5px;
+        padding:0;
+        margin-bottom: 20px;
+        @extend %box-shadow;
+        .panel-heading{
+            background: linear-gradient(90deg, #7ebcff, #59a1ef);
+            padding: 10px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            h3{
+                font-size: $fontSize + 6px;
+                @extend %font-White-Color;
+                margin:0;
+                font-weight:400;
+                span{
+                    cursor: pointer;
+                }
+            }
+        }
+        .panel-body{
+            padding: 10px;
+            overflow: hidden;
+            transition:all .3s ease-in-out;
+            form{
+                div.form-group{
+                    margin-bottom:0;
+                    label{
+                        display: inline-block;
+                        margin-bottom: .5rem;
+                        color: #55add9;
+                        font-size: 18px;
+                        font-weight:500;
+                    }
+                }
+            }
+            ul{
+                li{
+                    width:100%;
+                    font-size: $fontSize + 4px;
+                    text-transform:uppercase;
+                    font-weight:600;
+                    
+                    a{
+                        display:block;
+                        padding:5px;
+                        color:$mainColor;
+                        &:hover{
+                            text-decoration: none;
+                            background-color:#ececec ;
+                        }
+                    }
+                }
+            }
+        }
+        .panel-body.hide{
+            padding:0;
+            height:0;
+        }
+    }
+}
+@media(max-width:575.98px) {
+    .slider-home-page{
+        .slider-box{
+            .slider-content{
+                min-height:300px;
+            }
+        }
+        div.slide-icon{
+            width: 50px;
+            span{
+                top:45%;
+                font-size:$fontSize + 11px;
+            }
+            span.prev{
+                left:25px;
+            }   
+            span.next{
+                right:25px;
+            }
+        }
+        
+    }
+    
+}

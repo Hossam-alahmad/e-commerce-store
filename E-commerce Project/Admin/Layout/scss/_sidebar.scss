@@ -1,0 +1,144 @@
+// --------- Sidebar Style ----------
+nav.navbar{
+    position: relative;
+    width:100%;
+    .navbar-header{
+        .navbar-brand{
+            font-size:$font_size + 11px;
+        }
+        button.navbar-toggler{
+            display:none;
+        }
+    }
+    .menu-bar{
+        color:$nav_color;
+        display:none;
+        cursor: pointer;
+    }
+    ul.top-nav{
+        li{
+            > a{
+                color:$nav_color;
+                transition:all .2s ease-in-out;
+                &:hover{
+                    color:#fff;
+                }
+                .admin-image{
+                    position: relative;
+                    width: 25px;
+                    height: 25px;
+                    /* border: 1px solid #ddd; */
+                    border-radius: 50%;
+                    float: left;
+                    margin-right: 5px;
+                    img{
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        top: 0;
+                        left: 0;
+                        border-radius: 50%;
+                    }
+                    .avatar{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 50%;
+                        text-align: center;
+                        font-size: 16px;
+                        /* line-height: 130px; */
+                        color: #fff;
+                        background-color: #1f99f1;
+                    }
+                }
+            }
+            .dropdown-menu{
+                background-color:$nav_bg;
+                padding:10px 0;
+                li{
+                    a{
+                        display:block;
+                        padding:10px;
+                        transition:all .2s ease-in-out;
+                        text-decoration:none;
+                        &:hover{
+                            color:#fff;
+                            background-color:$nav_item_hover;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    div.navbar-collapse{
+        position: fixed;
+        top: 59px;
+        left: 0;
+        bottom:0;
+        padding: 10px 0;
+        width: 20%;
+        background-color:$nav_bg;
+        overflow-y:auto;
+        z-index:5000;
+        transition:all .2s ease-in-out;
+        ul.nav{
+            li{
+                list-style:none;
+                padding:5px 0;
+                a{
+                    padding:10px;
+                    color:$nav_color;
+                    display:block;
+                    text-decoration:none;
+                    transition:all .2s ease-in-out;
+                    &:hover{
+                        color:#fff;
+                        background-color:$nav_item_hover;
+                    }
+                }
+                ul{
+                    padding:0 35px;
+                    li{
+                        a{
+                            padding:5px 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.nav-fixed{
+    position: fixed !important;
+    width:100% !important;
+    z-index:1000 !important;
+}
+
+@media (max-width:568.98px){
+    .menu-bar{
+        display:block !important;
+    }
+    nav.navbar{
+        div.navbar-collapse{
+            width:0;
+        }
+        div.navbar-show{
+            width:50%;
+        }
+    }
+}
+@media (min-width:568.98px) and (max-width:767.98px){
+    .menu-bar{
+        display:block !important;
+    }
+    nav.navbar{
+        div.navbar-collapse{
+            width:0;
+        }
+        div.navbar-show{
+            width:35%;
+        }
+    }
+}

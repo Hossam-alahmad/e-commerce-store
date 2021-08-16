@@ -1,0 +1,55 @@
+$mainColor:#19a7d8;
+$secondColor:#333;
+$fontSize:14px;
+$lineHeight:1.7;
+$font_icon:#bfbfbf;
+$background_btn_color:linear-gradient(90deg, #27beed, #28bdf0);
+
+%background-btn-color{
+    background:$background_btn_color;
+    border:none;
+    outline:none;
+}
+
+%icon-color{
+    color:$font_icon;
+}
+%background-btn-hovercolor{
+    background: linear-gradient(90deg, #27beed, #2196bd);
+    border:none;
+}
+%clear-padding-rght-lft{
+    padding-right:0;
+    padding-left:0;
+}
+%box-shadow{
+    box-shadow:0 5px 3px #ddd;
+}
+%font-White-Color{
+    color:#fff;
+}
+%background-Color-White{
+    background-color:#fff;
+}
+%background-Color-DDD{
+    background-color: #ddd;
+}
+%margin-bottom{
+    margin-bottom:20px;
+}
+%margin-top{
+    margin-top:20px;
+}
+%img-responsive{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}
+%transition{
+    transition:all .3s ease-in-out;
+}
+%borderRadius{
+    border-radius:5px;
+}

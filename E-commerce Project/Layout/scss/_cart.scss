@@ -1,0 +1,92 @@
+/* ----------- Cart.php Style -------------- */
+#content{
+    .container{
+        .row{
+            > div{
+                padding:0;
+                margin-bottom: 40px;
+                .box{
+                    padding:20px;
+                    @extend %box-shadow;
+                    @extend %background-Color-White;
+                    @extend %borderRadius;
+                    table{
+                        thead{
+                            th:not(:first-child){
+                                text-align: center;
+                            }
+                        }
+                        tbody{
+                            tr{
+                                td{
+                                    img{
+                                        width:50px;
+                                        height:30px;
+                                    }
+                                    input{
+                                        width:40px;
+                                        text-align:right;
+                                    }
+                                }
+                                td:not(:first-child){
+                                    text-align: center;
+                                }
+                            }
+                        }
+                        tfoot{
+                            font-size:$fontSize + 4px;
+                            th:last-child{
+                                text-align: center;
+                            }
+                        }
+                    }
+                    .box-footer{
+                        width: 100%;
+                        overflow: hidden;
+                        padding: 20px;
+                        border: 1px solid #f7f6f6;
+                        background-color: #f7f6f6;
+                        .pull-left{
+                            a{
+                                background: #fff;
+                                border: 1px solid #ddd;
+                                &:hover{
+                                    background-color: #ececec;
+                                }
+                            }
+                        }
+                        .pull-right{
+                            button{
+                                background: #fff;
+                                border: 1px solid #ddd;
+                                &:hover{
+                                    background-color: #ececec;
+                                }
+                            }
+                        }
+                    }
+                }
+                #order_summary{
+                    .table{
+                        tr:last-child{
+                            th,td{
+                                font-size:$fontSize + 4px;
+                                font-weight:700;
+                            }
+                        }
+                    }   
+                }
+            }
+            > div:first-child{
+                padding:0 20px 0 0;
+            }
+        }
+    }
+}
+@media(max-width:992px){
+    .pull-left,.pull-right{
+        width:100%;
+        text-align: center;
+        margin-bottom:10px;
+    }
+}

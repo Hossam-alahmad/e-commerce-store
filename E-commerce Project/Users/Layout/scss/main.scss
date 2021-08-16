@@ -1,0 +1,33 @@
+@import '_extends.scss';
+@import '_header.scss';
+@import '_breadcrumb.scss';
+@import '_user-sidebar.scss';
+@import '_confirm-paid.scss';
+@import '_notification.scss';
+@import '_footer.scss';
+
+.col-md-8{
+    padding-right:0;
+    .box{
+        padding:20px 10px;
+        @extend %background-Color-White;
+        @extend %box-shadow;
+        border-radius:5px;
+        margin-bottom:40px;
+    }
+}
+
+.btn-success{
+    @extend %background-btn-color;
+    &:hover{
+        @extend %background-btn-hovercolor;
+    }
+}
+
+// ------------- Media query
+
+@media (max-width:767.98px){
+    .col-md-8{
+        padding:0;
+    }
+}

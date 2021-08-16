@@ -1,0 +1,31 @@
+/* ----------- Shop.php Style -------------- */
+.shop-content{
+    .row{
+        margin-bottom: 50px;
+        .content{
+            .header{
+                @extend %background-Color-White;
+                @extend %borderRadius;
+                @extend %box-shadow;
+                padding:10px;
+                margin-bottom:20px;
+                h1{
+                    color:#333;
+                    span{
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+nav.pagintaion-box{
+    position: relative;
+    margin:20px auto;
+}
+
+@media (max-width:767.98px){
+    .clear-padding{
+        padding:0;
+    }
+}

@@ -1,0 +1,75 @@
+/* ----------- Slider Home Page Style -------------- */
+.slider-home-page{
+    padding:20px 0;
+    .slider-box{
+        position: relative;
+        .slider-content{
+            min-height:500px;
+            position: relative;
+            img{
+                @extend %img-responsive;
+                opacity:0;
+                @extend %transition;
+            }
+            img.active{
+                opacity:1;
+            }
+        }
+    }
+    div.slide-icon{
+        position: absolute;
+        top: 0;
+        width: 100px;
+        height: 100%;
+        span{
+            position: absolute;
+            top:50%;
+            color:#ddd;
+            font-size:30px;
+            cursor: pointer;
+            &:hover{
+                @extend %font-White-Color;
+            }
+        }
+        span.prev{
+            left:50px;
+        }
+        span.next{
+            right: 50px;
+        }
+    }
+    div.previous{
+        left:15px;
+        background: linear-gradient(90deg, #000000a1 -5%, transparent);
+        &:hover{
+            background: linear-gradient(90deg, #000000a1 5%, transparent);
+        }
+    }
+    div.next{
+        right:15px;
+        background: linear-gradient(-90deg, #000000a1 -5%, transparent);
+        &:hover{
+            background: linear-gradient(-90deg, #000000a1 5%, transparent);
+        }
+    }
+    .collapse-box{
+        position: absolute;
+        bottom:15px;
+        left:50%;
+        transform:translate(-50%,0);
+        ul{
+            direction: rtl;
+            li{
+                
+                list-style:none;
+                display:inline-block;
+                width:20px;
+                height:5px;
+                color:#ddd;
+            }
+            li.active{
+                @extend %font-White-Color;
+            }
+        }
+    }
+}

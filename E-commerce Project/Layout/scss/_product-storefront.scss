@@ -1,0 +1,86 @@
+/* ----------- Product Store Front Style -------------- */
+.product-store{
+    @extend %background-Color-White;
+    padding: 20px 0;
+    text-align: center;
+    margin-bottom: 30px;
+    border: 1px solid #ddd;
+    @extend %box-shadow;
+    .box{
+        h2{
+            text-transform:uppercase;
+            color:$mainColor;
+            font-size:$fontSize + 18px;
+        }
+    }
+}
+.single{
+    margin-bottom:20px;
+    .product-box{
+        @extend %background-Color-White;
+        position: relative;
+        border-radius:10px;
+        overflow:hidden;
+        box-shadow:0px 3px 5px #ddd;
+        transition:all .5s ease-in-out;
+        text-align: center;
+        transform:scale(1);
+        &:hover{
+            transform:scale(1.1);
+        }
+        .product{
+            position: relative;
+            height:200px;
+                img{
+                    top:0;
+                    left:0;
+                    height:80%;
+                    margin:10%;
+                }
+        }
+        .content{
+            @extend %background-Color-White;
+            @extend %box-shadow;
+            padding: 10px;
+            text-align: center;
+            h3{
+                margin:0;
+                color:$secondColor;
+                font-weight: 500;
+                font-size: $fontSize + 6px;
+            }
+            span{
+                font-weight: 500;
+                font-size: $fontSize + 2px;
+                color:$mainColor;
+                ins{
+                    color:#f825ae;
+                    text-decoration:none;
+                }
+            }
+            div.button{
+                position: absolute;
+                text-align: center;
+                padding:10px;
+                visibility:hidden;
+                a{
+                    font-size:$fontSize;
+                    @extend %background-btn-color;
+                    width:60%;
+                    opacity:0;
+                    color:#fff;
+                    transition:all .3s .2s ease-in-out;
+                    
+                }
+            }
+        }
+        &:hover .content div.button{
+            position: relative;
+            visibility:visible;
+        }
+        &:hover .content div.button a{
+            opacity:1;
+        }
+    }
+}
+

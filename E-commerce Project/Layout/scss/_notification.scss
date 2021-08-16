@@ -1,0 +1,46 @@
+.notify-success{
+    position: absolute;
+    top: 50%;
+    left: 58%;
+    transform: translate(-53%, 260%);
+    background: #77c789;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 5px #ababab;
+    overflow: hidden;
+    visibility: hidden;
+    opacity:0;
+    transition: all .3s ease-in-out;
+    i.fa{
+        float: left;
+        font-size: $fontSize + 26px;
+        line-height: 37px;
+        margin-right: 20px;
+    }
+    p{
+        float: left;
+        font-size:$fontSize + 6px;
+        margin: 0;
+    }
+
+}
+.success{
+    transform: translate(-53%, 100%) !important;
+    opacity:1;
+    visibility: visible;
+}
+
+@media (max-width:767.98px){
+    .notify-success{
+        width:53%;
+        top: 106%;
+        left: 52.5% !important;
+    }
+}
+@media (max-width:992px){
+    .notify-success{
+        left: 63.5%;
+        transform: translate(-53%, 260%);
+    }
+}

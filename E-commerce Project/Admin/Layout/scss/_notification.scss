@@ -1,0 +1,33 @@
+//-------- notifictation style -------
+.notify-success{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, +100%);
+    background: #77c789;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 5px #ababab;
+    overflow: hidden;
+    visibility: hidden;
+    opacity:0;
+    transition: all .3s ease-in-out;
+    i.fa{
+        float: left;
+        font-size: $font_size + 26px;
+        line-height: 37px;
+        margin-right: 20px;
+    }
+    p{
+        float: left;
+        font-size:$font_size  + 6px;
+        margin: 0;
+    }
+
+}
+.success{
+    transform: translate(-50%, -50%) !important;
+    opacity:1;
+    visibility: visible;
+}

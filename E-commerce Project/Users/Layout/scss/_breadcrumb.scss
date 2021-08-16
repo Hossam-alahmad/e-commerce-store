@@ -1,0 +1,16 @@
+/* -------------- Breadcrumb Style ------------ */
+.breadcrumb-box{
+    .col-md-12{
+        padding:0;
+        margin-bottom:20px;
+        ul.breadcrumb{
+            @extend %background-Color-White;
+            margin: 10px 0 !important;
+            @extend %box-shadow;
+            a{
+                color:$mainColor;
+            }
+        } 
+    }
+    
+}
